@@ -1,0 +1,101 @@
+.swap-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.swap-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.swap-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.swap-header p {
+  color: #888;
+}
+
+.swap-grid {
+  display: grid;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .swap-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.swap-steps h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.step-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgba(255, 215, 0, 0.5);
+  font-family: monospace;
+}
+
+.swap-form {
+  background: #111;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.swap-form h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.swap-form label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.swap-form input,
+.swap-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  color: white;
+}
+
+.swap-btn {
+  width: 100%;
+  background: gold;
+  color: black;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.swap-btn:hover {
+  background: white;
+}

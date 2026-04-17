@@ -1,0 +1,55 @@
+.shipment {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.shipment-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.shipment-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.shipment-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shipment-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.shipment-input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.shipment-btn {
+  background: gold;
+  color: black;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.shipment-btn:hover {
+  background: white;
+}

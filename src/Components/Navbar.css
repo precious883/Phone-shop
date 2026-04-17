@@ -1,0 +1,119 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(20, 20, 20, 0.9);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 50;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  border-radius: 8px; /* optional: gives a rounded feel */
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #041888;              /* ✅ Blue text */
+  padding: 6px 14px;           /* ✅ Spacing like a button */
+  background: white;           /* ✅ White background */
+  border: 2px solid white;     /* ✅ White border */
+  border-radius: 20px;         /* ✅ Rounded corners */
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 14px;
+  margin: 0 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-item.active {
+  color: gold;
+}
+
+.contact-btn {
+  background: gold;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: block;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  background: #333;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-item {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 16px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mobile-item.active {
+  background: gold;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}

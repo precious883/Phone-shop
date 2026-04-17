@@ -1,0 +1,183 @@
+.crypto-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+  background-color: #111;
+}
+.crypto-section option{
+  background-color: #111;
+}
+
+.crypto-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .crypto-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .crypto-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.crypto-card {
+  background: #222;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.crypto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crypto-icon {
+  font-size: 20px;
+}
+
+.crypto-change {
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.crypto-change.positive {
+  color: #00c864;
+}
+
+.crypto-change.negative {
+  color: #e63946;
+}
+
+.crypto-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.crypto-price {
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.exchange-card {
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.exchange-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.exchange-header p {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.exchange-grid {
+  display: grid;
+  gap: 30px;
+}
+
+@media (min-width: 1024px) {
+  .exchange-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.exchange-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-box label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-row {
+  display: flex;
+  gap: 8px;
+}
+
+.form-row input,
+.form-row select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  color: white;
+}
+
+.swap-icon {
+  display: flex;
+  justify-content: center;
+  color: gold;
+}
+
+.exchange-btn {
+  background: gold;
+  color: black;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.exchange-btn:hover {
+  background: white;
+}
+
+.exchange-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature {
+  display: flex;
+  gap: 16px;
+}
+
+.feature-icon {
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #888;
+}

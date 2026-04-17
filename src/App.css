@@ -1,0 +1,178 @@
+.app-container {
+  min-height: 100vh;
+  background: #111;
+  color: white;
+}
+
+.main-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section-header p {
+  color: #888;
+}
+
+.section-header.center {
+  text-align: center;
+  flex-direction:row
+}
+
+.link-btn {
+  color: gold;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.crypto-preview {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .crypto-preview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .crypto-preview {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.crypto-card-preview {
+  background: #222;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crypto-name {
+  font-size: 10px;
+  color: #888;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.crypto-price {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.crypto-change {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.crypto-change.positive {
+  color: #00c864;
+}
+
+.crypto-change.negative {
+  color: #e63946;
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: gold;
+  color: black;
+}
+
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.shop-filters {
+  display: flex;
+  gap: 8px;
+  background: #222;
+  padding: 4px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.filter {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.filter.active {
+  background: gold;
+  color: black;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 64px;
+  height: 64px;
+  background: #00c864;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,200,100,0.3);
+}
+
+.whatsapp-btn:hover {
+  background: #00a854;
+}
+
+.ping-dot {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 12px;
+  height: 12px;
+  background: gold;
+  border-radius: 50%;
+  animation: ping 1s infinite;
+}
+
+@keyframes ping {
+  0% { transform: scale(0.8); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.6; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
