@@ -14,12 +14,12 @@ import galaxyS21 from "./assets/s21x.jpg";
 import ipad from "./assets/ipad.jpg";
 import zfold5 from "./assets/galaxyfold.jpg";
 import MacBook from "./assets/macbook.jpg";
-import Asus1 from "./assets/Asus1.jpg";
+import As1 from "./assets/Asus1.jpg";
 import lenovo from "./assets/lenovo.jpg";
 import HP1 from "./assets/HP1.jpg";
 import vector1 from "./assets/vector1.jpg";
 import vector2 from "./assets/vector2.jpg"; 
-import Asus2 from "./assets/Asus2.jpg";
+import As2 from "./assets/Asus2.jpg";
 import ps5 from "./assets/ps5.jpg";
 import ps4 from "./assets/ps4.jpg";
 import note10 from "./assets/note10.jpg";
@@ -30,8 +30,8 @@ import x360 from "./assets/x360.jpg";
 import core7 from "./assets/core7.jpg";
 import AIR from "./assets/AIR.jpg";
 import LOCKED from "./assets/LOCKED.jpg";
-import pixel1 from "./assets/pixel1.jpg";
-import pixel2 from "./assets/pixel2.jpg";
+import pix1 from "./assets/pixel1.jpg";
+import pix2 from "./assets/pixel2.jpg";
 import mac1 from "./assets/mac1.jpg";
 import mac2 from "./assets/mac2.jpg";
 import dell from "./assets/dell1.jpeg";
@@ -338,7 +338,7 @@ export const PRODUCTS = [
     price: 1799,
     category: "Phones",        // must match CATEGORIES
     subcategory: "Google Pixel",     // must match CATEGORIES[0].subcategories
-    image: pixel1,
+    image: pix1,
     description: "Excellent condition, 256GB, Space Black. Battery health 100%.",
     condition: "new",
      variants: [
@@ -353,7 +353,7 @@ export const PRODUCTS = [
     price: 1799,
     category: "Phones",        // must match CATEGORIES
     subcategory: "Google Pixel",     // must match CATEGORIES[0].subcategories
-    image: pixel2,
+    image: pix2,
     description: "Excellent condition, 256GB, Space Black. Battery health 100%.",
     condition: "new",
      variants: [
@@ -419,7 +419,7 @@ export const PRODUCTS = [
     price: 2100000,
     category: "Laptops",
     subcategory: "Others", 
-    image:Asus1 ,
+    image:As1 ,
     description: "Gaming PC, 32GB RAM, 1TB SSD, Face recognition.",
     condition: "new",
      variants: [
@@ -564,7 +564,7 @@ export const PRODUCTS = [
     price: 1980000,
     category: "Laptops",
     subcategory: "Others", 
-    image:Asus2 ,
+    image:As2 ,
     description: "Gaming PC, 16GB RAM, 1TB SSD, Thunderbolt, Face recognition.",
     condition: "new",
      variants: [
