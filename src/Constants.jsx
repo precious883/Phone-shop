@@ -970,9 +970,3 @@ export const PRODUCTS = [
     },
 ];
 
-// ✅ Crypto rates
-export const CRYPTO_RATES = [
-  { symbol: "BTC", name: "Bitcoin", price: 65432.1, change24h: 2.5, icon: "₿" },
-  { symbol: "ETH", name: "Ethereum", price: 3456.78, change24h: -1.2, icon: "Ξ" },
-  { symbol: "USDT", name: "Tether", price: 1.0, change24h: 0.01, icon: "₮" },
-  { symbol: "SOL", name: "Solana", price: 145.2, change24h: 5.8, icon: "S" },]

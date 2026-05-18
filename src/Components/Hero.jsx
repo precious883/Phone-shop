@@ -1,11 +1,15 @@
 import React from "react";
 import "./Hero.css";
-import { Star, ChevronRight, Bitcoin, ArrowUpRight } from "lucide-react";
+import { Star, ChevronRight, Bitcoin, ArrowUpRight, ArrowDownRight } from "lucide-react";
 import RotatingImages from "./RotatingImages";
-
-
+import useCryptoPrices from "./useCryptoPrices"; // ✅ NEW LIVE PRICES HOOK
 
 function Hero({ onShopClick, setActiveTab }) {
+  // ✅ Get live crypto prices
+  const prices = useCryptoPrices();
+  const btc = prices?.find((rate) => rate.symbol === "BTC");
+  const usdt = prices?.find((rate) => rate.symbol === "USDT");
+
   return (
     <section className="hero">
       <div className="hero-content">
@@ -27,7 +31,6 @@ function Hero({ onShopClick, setActiveTab }) {
             <button onClick={onShopClick} className="btn-primary">
               Shop Now <ChevronRight size={20} />
             </button>
-            {/* ✅ Swap Phone button now works */}
             <button
               className="btn-secondary"
               onClick={() => setActiveTab("swap")}
@@ -64,12 +67,24 @@ function Hero({ onShopClick, setActiveTab }) {
                 <div>
                   <div className="crypto-title">BTC/USDT</div>
                   <div className="crypto-change">
-                    <ArrowUpRight size={12} /> +2.45%
+                    {!btc ? (
+                      "Loading..."
+                    ) : btc.change24h >= 0 ? (
+                      <>
+                        <ArrowUpRight size={12} /> +{btc.change24h.toFixed(2)}%
+                      </>
+                    ) : (
+                      <>
+                        <ArrowDownRight size={12} /> {btc.change24h.toFixed(2)}%
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
               <div className="crypto-rate">
-                <div className="rate">$65,432.10</div>
+                <div className="rate">
+                  {!btc ? "$0.00" : `$${btc.price.toLocaleString()}`}
+                </div>
                 <div className="rate-label">Live Rate</div>
               </div>
             </div>
